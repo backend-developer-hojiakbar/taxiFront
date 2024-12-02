@@ -1,0 +1,114 @@
+/* Global Styles */
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container h2 {
+  font-size: 28px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+
+.form_group {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #232323;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.input_group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container input,
+.container input[type="file"] {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box; /* Ensures input does not exceed container width */
+  transition: all 0.3s ease; /* Ensures smooth transition of properties */
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 480px;
+    padding: 15px;
+  }
+
+  .container input,.container input[type="file"] {
+    padding: 8px;
+  }
+
+  .submitButton {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 450px;
+    padding: 12px;
+  }
+
+  .container input, .container input[type="file"] {
+    padding: 10px;
+  }
+
+  .submitButton {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .container input,.container input[type="file"] {
+    padding: 8px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .container {
+    padding: 5px;
+  }
+
+  .container input,.container input[type="file"] {
+    max-width: 100%;
+  }
+
+  .submitButton {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
